@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
+		<title>Astral Portfolio Page</title>
+	</head>
+	<body>
+		<!-- start writing your code -->
+        <header>
+            <div><i class="fa-solid fa-house-chimney"></i></div>
+            <div><i class="fa-solid fa-folder"></i></div>
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <div><i class="fa-brands fa-twitter"></i></div>
+        </header>
+        <main>
+            <div class="home-content">
+                <div class="home-info">
+                    <h2>Jane Doe</h2>
+                    <p>Senior Astral Projectionist</p>
+                </div>
+                <div class="home-img">
+                    <img src="/assets/images/me.jpg"/>
+                    <div class="icon-div" onclick="navigate()"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+            </div>
+            <div class="work-content hide">
+                <h2>Work</h2>
+                <p>Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia luctus elit eget interdum.</p>
+                <div class="gallery">
+                    <div><img src="/assets/images/pic01.jpg"/></div>
+                    <div><img src="/assets/images/pic02.jpg"/></div>
+                    <div><img src="/assets/images/pic03.jpg"/></div>
+                    <div><img src="/assets/images/pic04.jpg"/></div>
+                    <div><img src="/assets/images/pic05.jpg"/></div>
+                    <div><img src="/assets/images/pic06.jpg"/></div>
+                    <div><img src="/assets/images/pic07.jpg"/></div>
+                    <div><img src="/assets/images/pic08.jpg"/></div>
+                    <div><img src="/assets/images/pic09.jpg"/></div>
+                    <div><img src="/assets/images/pic10.jpg"/></div>
+                    <div><img src="/assets/images/pic11.jpg"/></div>
+                    <div><img src="/assets/images/pic12.jpg"/></div>
+                </div>
+            </div>
+            <div class="contact-content hide">
+                <h2>Contact Me</h2>
+                <form onsubmit="submitForm(event)">
+                    <div class="first-input-div" style="display: flex;">
+                        <div style="flex: 0.5; padding: 10px;"><input type="text" placeholder="Name"/></div>
+                        <div style="flex: 0.5; padding: 10px;"><input type="email" placeholder="Email"/></div>
+                    </div>
+                    <div style="padding: 10px"><input type="text" placeholder="Subject"/></div>
+                    <div style="padding: 10px"><textarea placeholder="Message" rows="14"></textarea></div>
+                    <div style="padding: 10px"><button type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Untitled. | Design:<a href="#">HTML5 UP</a> | Demo Images: <a href="#">Unsplash</a></p>
+        </footer>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="./script.js"></script>
+	</body>
+</html>
